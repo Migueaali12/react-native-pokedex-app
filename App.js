@@ -1,8 +1,8 @@
-import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, View } from 'react-native'
+
+import { StatusBar, StyleSheet, View } from 'react-native'
 import { Main } from './components/Main'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import "./global.css"
+import './global.css'
 
 export default function App() {
   return (
@@ -21,6 +21,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 10,
+    paddingHorizontal: 12,
   },
 })

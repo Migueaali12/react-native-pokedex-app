@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
-import { View, ActivityIndicator, FlatList } from 'react-native'
+import { ActivityIndicator, FlatList } from 'react-native'
 import { getPokemonWithImages } from '../lib/pokemon'
-import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { AnimatedCard } from './Card'
 import { Screen } from './Screen'
 
 export function Main() {
-  const insets = useSafeAreaInsets()
   const [pokemon, setPokemon] = useState([])
 
   useEffect(() => {
@@ -23,7 +21,6 @@ export function Main() {
 
   return (
     <Screen>
-
       {pokemon.length === 0 ? (
         <ActivityIndicator size="large" color="#fff" />
       ) : (

@@ -4,6 +4,17 @@ module.exports = {
   ignorePatterns: ["/dist/*"],
   plugins: ["prettier"],
   rules: {
-    // "prettier/prettier": ["warn", { "endOfLine": "auto" }],
+    'prettier/prettier': [
+      'warn',
+      {
+        endOfLine: 'auto',
+        singleQuote: true,
+        trailingComma: 'all',
+        printWidth: 120,
+        tabWidth: 2,
+        semi: false,
+        bracketSpacing: true
+      },
+    ],
   },
 }
